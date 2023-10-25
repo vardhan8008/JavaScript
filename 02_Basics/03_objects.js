@@ -9,6 +9,9 @@ const Details={
     location:"Hyderabad",
     isLoggedin:false,
     loginDays:["Mon","Wed","Fri"],
+    greet:function(){
+        console.log(`congrats ${this.name}`)
+    }
 }
 
 // console.log(Details.name)
@@ -34,6 +37,9 @@ Details.greeting1=function(){
     //this ==> accessing the variable outside the object which is declared inside the variables in a object
 }
 console.log(Details.greeting1())
+console.log(Details.greet())
+
+
 
 
 
